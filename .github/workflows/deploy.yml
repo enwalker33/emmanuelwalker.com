@@ -1,0 +1,14 @@
+name: Deploy to Devbox
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Rsync to Devbox
+        run: |
+          rsync -avz ./public/ admin@devbox.tail2ba19f.ts.net:/Users/admin/Sites/dashboard
