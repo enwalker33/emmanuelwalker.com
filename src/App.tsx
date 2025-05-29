@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './components/Landing';
-import SignIn from './components/SignIn';
-import Portfolio from './components/Portfolio';
+import Landing from './app/components/Landing';
+import SignIn from './app/components/Signin';
+import Portfolio from './app/components/Portfolio';
 
 
 function App() {
